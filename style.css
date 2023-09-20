@@ -1,0 +1,212 @@
+
+/* Inicio da estilizaçao */
+
+
+/* css da página */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat Alternates', sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* estilizaçao do header  com links internos e externo */
+.nav-list,
+a {
+  color: white;
+  font-weight: 800;
+  font-size: 24px;
+  cursor: pointer;
+  line-height: 59px;
+  text-decoration: none;
+  list-style: none;
+
+}
+
+/* estilizaçao de cor, display do header com listas dos links */
+.nav-list {
+  display: flex;
+  justify-content: center;
+  padding-top: 25px;
+  width: 100vw;
+  gap: 100px;
+  background: black;
+
+
+
+}
+
+
+/* estilizaçao da dimensionalidade class pai das headers/nav com links internos */
+nav {
+  position: fixed;
+  -webkit-box-shadow: 5px 5px 15px 5px #000000;
+  box-shadow: 5px 5px 15px 5px #000000;
+}
+
+
+/* estilizaçao do profile com foto, nome, cargo e cidade */
+.profile-box1 {
+  background: transparent;
+  max-width: 450px;
+  margin: auto;
+  color: white;
+  text-align: center;
+  line-height: 39px;
+  padding-top: 150px;
+
+}
+
+/* dimensao do avatar/foto com borda arredondada  */
+.profile-pic {
+  border-radius: 50%;
+  width: 320px;
+}
+
+/* cor de fundo do site portfólio*/
+.background-img {
+  position: relative;
+  width: 100%;
+  background: black;
+  opacity: 0.9;
+
+}
+
+/* importançao imagem e estilizaçao do fundo site portfólio */
+.background-img::after {
+  content: "";
+
+  background-image: url(./assets/wp4989100-creative-design-gold-minimalist-wallpapers.png);
+  opacity: 0.28;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+
+/* estilizaçao do "sobre mim" link interno */
+.title {
+  color: white;
+  max-width: 650px;
+  margin: auto;
+  text-align: center;
+  line-height: 29px;
+
+}
+
+/* estilizaçao das listas */
+li {
+  list-style: none;
+}
+
+/* estilizaçao da "borda sobre mim" e "formaçao educacional" */
+.text-about {
+  border: 1px solid white;
+  padding: 8px;
+}
+
+/* estilizaçao do espaçamento e dimensao do "sobre mim" e "formaçao educacional" */
+.title1 {
+  padding: 110px 0 60px 0;
+}
+
+/* estilizaçao do wrapper de hobbies */
+.containerWrapper {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* hobbies colunas */
+.containerr {
+  border: 1px solid white;
+  padding: 8px;
+  max-width: 800px;
+  background-color: transparent;
+  border-radius: 5px;
+  padding: 10px;
+  margin: auto 5px;
+
+  color: white;
+}
+
+/* estilizaçoes dos contents, accordions items e headers */
+.contentt {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.accordion_item {
+  border-radius: 5px;
+}
+
+.accordion_item:hover {
+  opacity: 0.9;
+}
+
+.accordion_header {
+  padding: 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  font-size: 24px;
+
+}
+
+
+/* colunas do hobbies */
+.accordion_header,
+span {
+  text-align: center;
+  width: 780px;
+
+}
+
+/* colunas do hobbies */
+.accordion_content {
+  margin-left: 50px;
+  margin-right: 15px;
+  overflow: hidden;
+  height: 0;
+  transition: all .5s ease;
+  font-size: 20px;
+  text-align: center;
+
+}
+
+/* estilizaçao das interaçoes do javascript e do hobbies, botoes de expandi */
+.active {
+  padding-bottom: 10px;
+}
+
+span,
+.icon {
+  font-weight: 600;
+}
+
+
+.title_article {
+  color: white;
+  max-width: 650px;
+  margin: auto;
+  text-align: center;
+  line-height: 29px;
+  margin: 103px auto 60px;
+}
+
+
+/* estilizaçao do fim da página o footer */
+footer {
+
+  background-color: transparent;
+  color: white;
+  margin-top: 70px;
+}
